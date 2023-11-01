@@ -5,43 +5,74 @@
     box-sizing: border-box;     
 }
 
+.gradindex {
+    height: 100vh;
+    background: linear-gradient(to right, #C06262, #9F5CA6, #8092CF, #84D39A, #DCD87F);
+}
+
+.gradpop {
+    height: 100vh;
+    background: linear-gradient(110deg, #e55757, #bb73c2, #6985e9);
+}
+
+.gradalt {
+    height: 100vh;
+    background: linear-gradient(70deg, #92451a, #da7070, #d9ac6a);
+}
+
+.gradele {
+    height: 100vh;
+    background: linear-gradient(110deg, #41c49d, #6381e6, #d952e6);
+}
+
+.gradjpop {
+    height: 100vh;
+    background: linear-gradient(70deg, #7f5090, #d496c5);
+}
+
+.gradfilm {
+    height: 100vh;
+    background: linear-gradient(to right, #747474, #545a65, #696757, #695656, #313131);
+}
+
 h1{
     font-kerning: auto;
     display: inline-block;
     position: absolute;
-    top: 0%;
-    left: 33%;
+    top: 9%;
+    width: 100%;
     text-align: center;
-    padding-top: 5%;
     color: white;
     font-size: 450%;
-    font-weight: 1000;
+    font-weight: 900;
     transform: scale(1.75,1);
     font-family:'Times New Roman', Times, serif;
 }
 
-.indextext{
+h1:hover{
+    color:black
+}
+
+h2{
     font-kerning: auto;
     display: inline-block;
-    position: absolute;
-    left: 43%;
     text-align: center;
-    color: white;
-    font-size: 400%;
+    color: #8092CF;
+    font-size: 225%;
+    font-weight: 900;
     font-family:'Times New Roman', Times, serif;
 }
-  
-.gradindex {
-    height: 100vh;
-    background: linear-gradient(to right, #C06262, #9F5CA6, #8092CF, #84D39A, #DCD87F);
+
+h2:hover{
+    color: black;
 }
 
 .buttonpop {
     position: absolute;
     top: 27%;
     left: 43%;
-    width: 200px;
-    height: 75px;
+    width: 14%;
+    height: 10%;
     background: #ffffff;
     border-radius: 50%;
     font-family:'Times New Roman', Times, serif;
@@ -49,10 +80,10 @@ h1{
 
 .buttonalt {
     position: absolute;
-    top: 40%;
-    left: 36.5%;
-    width: 400px;
-    height: 75px;
+    top: 41%;
+    left: 38%;
+    width: 24%;
+    height: 10%;
     background: #ffffff;
     border-radius: 50%;
     font-family:'Times New Roman', Times, serif;
@@ -60,10 +91,10 @@ h1{
 
 .buttonele {
     position: absolute;
-    top: 53%;
-    left: 38%;
-    width: 350px;
-    height: 75px;
+    top: 55%;
+    left: 38.8%;
+    width: 22.4%;
+    height: 10%;
     background: #ffffff;
     border-radius: 50%;
     font-family:'Times New Roman', Times, serif;
@@ -71,10 +102,10 @@ h1{
 
 .buttonjpop {
     position: absolute;
-    top: 66%;
+    top: 69%;
     left: 42.3%;
-    width: 220px;
-    height: 75px;
+    width: 15.4%;
+    height: 10%;
     background: #ffffff;
     border-radius: 50%;
     font-family:'Times New Roman', Times, serif;
@@ -82,29 +113,71 @@ h1{
 
 .buttonfilm {
     position: absolute;
-    top: 79%;
-    left: 41.2%;
-    width: 250px;
-    height: 75px;
+    top: 83%;
+    left: 42.3%;
+    width: 15.4%;
+    height: 10%;
     background: #ffffff;
     border-radius: 50%;
     font-family:'Times New Roman', Times, serif;
 }
 
 .buttonpop:hover {
-    background: #f2ed6a;
+    background: #fffcb4;
 }
 .buttonalt:hover {
-    background: #f2ed6a;
+    background: #fffcb4;
 }
 .buttonele:hover {
-    background: #f2ed6a;
+    background: #fffcb4;
 }
 .buttonjpop:hover {
-    background: #f2ed6a;
+    background: #fffcb4;
 }
 .buttonfilm:hover {
-    background: #f2ed6a;
+    background: #fffcb4;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    position: absolute;
+    opacity: 10%;
+    width: 92vw;
+    height: 45vh;
+    left: 4%;
+    top: 22%
+}
+
+.flexbox1{
+    display: flex;
+    background-color: #f1f1f1;
+    opacity: 100%;
+    height: 2%;
+    width: 2%;
+    margin: 0.25%;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1%;
+}
+
+.flexbox1:hover{
+    background-color: #dfdb71;
+    transition-duration: 0.25s;
+}
+
+.flexbox0{
+    display: flex;
+    background-color: #f1f1f1;
+    opacity: 0%;
+    height: 2%;
+    width: 2%;
+    margin: 0.25%;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1%;
 }
 
 .bar {
@@ -118,67 +191,61 @@ h1{
     left:0%;
 }
 
+h3{
+    font-kerning: auto;
+    display: inline-block;
+    position: absolute;
+    color: white;
+    font-size: 225%;
+    font-weight: 900;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
 .days1{
-    font-size: 100;
+    position: absolute;
     font-family: 'Times New Roman', Times, serif;
-    display: absolute;
-    text-color: white;
-    bottom: 20%;
-    left: 5%;
+    bottom: 23%;
+    left: 4%;
 }
 
 .days2{
-    font-size: 100;
+    position: absolute;
     font-family: 'Times New Roman', Times, serif;
-    bottom: 20%;
-    left: 20%;
+    bottom: 23%;
+    left: 19%;
 }
 
 .days3{
-    font-size: 100;
+    position: absolute;
     font-family: 'Times New Roman', Times, serif;
-    bottom: 20%;
-    left: 35%;
+    bottom: 23%;
+    left: 34%;
 }
 
 .days4{
-    font-size: 100;
+    position: absolute;
     font-family: 'Times New Roman', Times, serif;
-    bottom: 20%;
-    left: 50%;
+    bottom: 23%;
+    left: 49%;
 }
 
 .days5{
-    font-size: 100;
+    position: absolute;
     font-family: 'Times New Roman', Times, serif;
-    bottom: 20%;
-    left: 65%;
+    bottom: 23%;
+    left: 64%;
 }
 
 .days6{
-    font-size: 100;
+    position: absolute;
     font-family: 'Times New Roman', Times, serif;
-    bottom: 20%;
-    left: 80%;
+    bottom: 23%;
+    left: 79%;
 }
 
 .days7{
-    font-size: 100;
+    position: absolute;
     font-family: 'Times New Roman', Times, serif;
-    bottom: 20%;
-    left: 95%;
-}
-
-.oval {
-    height: 7px;
-    width: 20px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    text-align: center;
-    padding-bottom: 10px;
-  }
-
-.oval:hover{
-    background-color: aqua;
-    transition: background-color 1s;
+    bottom: 23%;
+    left: 94%;
 }
